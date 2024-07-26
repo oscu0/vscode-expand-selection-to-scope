@@ -7,8 +7,8 @@
 import * as vscode from 'vscode';
 
 // Bracket tables
-const symbols_l = ['{', '[', '('];
-const symbols_r = ['}', ']', ')'];
+const symbols_l = ['{', '[', '(', '\'', '"', "<"];
+const symbols_r = ['}', ']', ')', '\'', '"', ">"];
 
 // Return the top of the stack
 const peek = (stack) => stack.slice(-1)[0];
